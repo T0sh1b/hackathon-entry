@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Entry Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body background="/J4x.gif">
+    <div class="container">
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <h1>JSSPS APPSMART'24</h1>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="/images-removebg-preview.png" height="100" width="100">
+        </div>
+        <!-- Team Name -->
+        <div class="question">
+            <label for="team-name">1. What is your team name?</label>
+            <select id="team-name" name="team-name" required>
+                <option value="" disabled selected>Select your team</option>
+                <option value="teamA">Team A</option>
+                <option value="teamB">Team B</option>
+                <option value="teamC">Team C</option>
+                <option value="teamD">Team D</option>
+            </select>
+        </div>
+
+        <!-- School Selection -->
+        <div class="question">
+            <label for="school">2. Which school are you from?</label>
+            <select id="school" name="school" required>
+                <option value="" disabled selected>Select your school</option>
+                <option value="schoolA">School A</option>
+                <option value="schoolB">School B</option>
+                <option value="schoolC">School C</option>
+                <option value="schoolD">School D</option>
+            </select>
+        </div>
+
+        <!-- Innovation Question (Dropdown) -->
+        <div class="question">
+            <label for="innovation">3. What is your favorite recent technological innovation?</label>
+            <select id="innovation" name="innovation" required>
+                <option value="" disabled selected>Select an innovation</option>
+                <option value="AI">Artificial Intelligence (AI)</option>
+                <option value="Blockchain">Blockchain</option>
+                <option value="ARVR">Augmented Reality/Virtual Reality</option>
+                <option value="IoT">Internet of Things (IoT)</option>
+                <option value="QuantumComputing">Quantum Computing</option>
+            </select>
+        </div>
+
+        <!-- Challenge Selection (Multiple Choice) -->
+        <div class="question">
+            <label>4. Which of these challenges interests you the most?</label>
+            <div class="options">
+                <input type="radio" id="environment" name="challenge" value="environment" required>Solving
+                environmental issues with technology
+                <br><br>
+                <input type="radio" id="education" name="challenge" value="education" required>Improving education
+                through technology
+                <br><br>
+                <input type="radio" id="healthcare" name="challenge" value="healthcare" required>Innovating
+                healthcare solutions
+                <br><br>
+                <input type="radio" id="security" name="challenge" value="security" required>Cybersecurity and
+                digital privacy
+                <br><br>
+                <input type="radio" id="sustainability" name="challenge" value="sustainability" required>Sustainability
+                and climate change
+            </div>
+        </div>
+
+        <div class="question">
+            <label for="experience">5. How excited are you for this competition?</label>
+            <div class="rating">
+                <input type="radio" id="rate1" name="experience" value="1" required>
+                <label for="rate1" style="font-size: 50px;">😢</label>
+                <input type="radio" id="rate2" name="experience" value="2" required>
+                <label for="rate2" style="font-size: 50px;">😕</label>
+                <input type="radio" id="rate3" name="experience" value="3" required>
+                <label for="rate3" style="font-size: 50px;">😐</label>
+                <input type="radio" id="rate4" name="experience" value="4" required>
+                <label for="rate4" style="font-size: 50px;">😊</label>
+                <input type="radio" id="rate5" name="experience" value="5" required>
+                <label for="rate5" style="font-size: 50px;">😁</label>
+            </div>
+        </div>
+
+        <!-- Excitement Question -->
+        <div class="question">
+            <label for="excitement">6. In one sentence, tell us what makes you excited about participating in this
+                hackathon.</label>
+            <textarea id="excitement" name="excitement" rows="4" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submit-btn">
+            <button type="button" id="submit">Submit</button>
+        </div>
+    </div>
+    <script src="/main.js"></script>
+</body>
+
+</html>
